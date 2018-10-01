@@ -27,10 +27,10 @@ def validate_form():
     emailerror = ""
     if (username == "") or (len(username)<3) or (len(username)>20) or (" " in username):
         errors = True
-        usernameerror = " Error in username, please resubmit. Between 3 and 20 characters with no spaces, please."
+        usernameerror = " Error in username, please resubmit. Between 3 and 20 characters with no spaces"
     if (password == "") or (len(password)<3) or (len(password)>20) or (" " in password):
         errors = True
-        passworderror = " Error in password, please resubmit. Between 3 and 20 characters with no spaces, please."
+        passworderror = " Error in password, please resubmit. Between 3 and 20 characters with no spaces"
     if (verifypassword == "") or (len(verifypassword)<3) or (len(verifypassword)>20) or (" " in verifypassword) or (verifypassword != password):
         errors = True
         verifypassworderror = " Error in username, please resubmit. Between 3 and 20 characters with no spaces, and must match password."
